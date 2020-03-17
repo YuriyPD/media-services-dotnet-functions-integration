@@ -167,7 +167,7 @@
                       }
                     },
                     "method": "post",
-                    "path": "/dbs/@{encodeURIComponent('vidb')}/colls/@{encodeURIComponent('vicol')}/docs"
+                    "path": "/dbs/@{encodeURIComponent('vidbb')}/colls/@{encodeURIComponent('vicol')}/docs"
                   }
                 },
                 "Upload_video_and_index": {
@@ -259,7 +259,7 @@
                         }
                       },
                       "method": "post",
-                      "path": "/dbs/@{encodeURIComponent('vidb')}/colls/@{encodeURIComponent('vicol')}/docs"
+                      "path": "/dbs/@{encodeURIComponent('vidbb')}/colls/@{encodeURIComponent('vicol')}/docs"
                     }
                   },
                   "Terminate": {
@@ -455,7 +455,7 @@
                   }
                 },
                 "method": "get",
-                "path": "/dbs/@{encodeURIComponent('vidb')}/colls/@{encodeURIComponent('vicol')}/docs/@{encodeURIComponent(triggerOutputs()['queries']['id'])}"
+                "path": "/dbs/@{encodeURIComponent('vidbb')}/colls/@{encodeURIComponent('vicol')}/docs/@{encodeURIComponent(triggerOutputs()['queries']['id'])}"
               },
               "runAfter": {
                 "Get_Video_Index": [
@@ -498,7 +498,7 @@
                 "headers": {
                   "x-ms-documentdb-partitionkey": "@{formatDateTime(utcNow(),'d')}"
                 },
-                "path": "/dbs/@{encodeURIComponent('vidb')}/colls/@{encodeURIComponent('vicol')}/docs"
+                "path": "/dbs/@{encodeURIComponent('vidbb')}/colls/@{encodeURIComponent('vicol')}/docs"
               },
               "runAfter": {
                 "add-offset-to-insights": [
